@@ -59,7 +59,6 @@ class Juego extends React.Component {
     }
 
 
-
     async tick() {
       if (this.state.esperandoRespuesta===true){
           if (this.props.globalState.hasTurn===false){
@@ -69,11 +68,11 @@ class Juego extends React.Component {
                 switch (response.data.response.gameResult){
 
                   case 'waitingOpponentMove': this.setState({celdas:response.data.response.board, titulo:`Turno de ${this.props.globalState.opponentName} (${this.props.globalState.opponentSymbol})`});
-                    this.props.setGlobalState(prevGlobalState => ({hasTurn:false}));////¿¿
+                    this.props.setGlobalState(prevGlobalState => ({hasTurn:false}));
                     break;
 
                   case 'waitingOpponentRematch': this.setState({celdas:response.data.response.board});
-                    this.props.setGlobalState(prevGlobalState => ({hasTurn:false}));////¿¿
+                    this.props.setGlobalState(prevGlobalState => ({hasTurn:false}));
                     break;
 
                   case 'yourTurnToPlay': console.log("Es tu turno");
