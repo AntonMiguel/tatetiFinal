@@ -1,6 +1,5 @@
 ###  
  
-
 # Tateti con React y Node - Programación Avanzada
 
 El proyecto tiene 2 carpetas
@@ -28,7 +27,7 @@ docker run --name miguredis -p 6379:6379 redis
 
 ### Backend
 
-Abrir ventana de comandos en el folder node y ejecutar :
+Abrir ventana de comandos en la carpeta tatetinode y ejecutar :
 
 ```bash
 npm install
@@ -38,7 +37,7 @@ npm start
 
 ### Frontend
 
-Abrir ventana de comandos en la carpeta react, ejecutar:
+Abrir ventana de comandos en la carpeta tatetireact, ejecutar:
 
 ```bash
 npm install
